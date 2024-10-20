@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">DeFi Platform</h1>
+            <ul class="nav-links">
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="connect-wallet-button" class="wallet-button">Connect Wallet</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Empowering Decentralized Finance</h1>
+        <p>Your gateway to lending, borrowing, and earning with confidence.</p>
+        <a href="#explore" class="cta-button">Get Started</a>
+    </header>
+
+    <!-- Wallet Connection Section -->
+    <section id="explore" class="wallet-section">
+        <h2>Connect Your Wallet</h2>
+        <div id="wallet-info">
+            <p id="wallet-balance"></p>
+        </div>
+        <section id="transaction-history-section">
+            <h2>Your Transaction History</h2>
+            <ul id="transaction-history"></ul>
+        </section>
+
+
+        <p>Start your DeFi journey by connecting your wallet.</p>
+        <p id="wallet-status" class="wallet-status"></p>
+
+        <!-- LendingBorrowing Section -->
+    </section>
+    <section id="lend-borrow-section">
+        <h2>Lend & Borrow</h2>
+        <div>
+            <input type="text" id="lend-amount" placeholder="Enter amount to lend">
+            <button id="lend-button">Lend</button>
+            <p id="lend-status"></p>
+        </div>
+
+        <div>
+            <input type="text" id="borrow-amount" placeholder="Enter amount to borrow">
+            <button id="borrow-button">Borrow</button>
+            <p id="borrow-status"></p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="feature">
+            <h3>Earn Interest</h3>
+            <p>Deposit your assets and earn competitive interest rates.</p>
+        </div>
+        <div class="feature">
+            <h3>Borrow Crypto</h3>
+            <p>Instantly borrow crypto using collateralized assets.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure & Transparent</h3>
+            <p>All transactions are secured and transparent on the blockchain.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 DeFi Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
